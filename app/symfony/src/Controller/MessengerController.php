@@ -8,12 +8,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class MessengerController extends AbstractController
 {
     /**
-     * @Route("/messenger", name="messenger")
+     * @Route("/", name="home")
      */
     public function index()
     {
         return $this->render('messenger/index.html.twig', [
-            'controller_name' => 'MessengerController',
+            'controller_name' => 'Messenger handler',
         ]);
     }
 }
