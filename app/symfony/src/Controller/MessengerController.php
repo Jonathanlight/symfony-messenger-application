@@ -16,7 +16,7 @@ class MessengerController extends AbstractController
     {
 
          // will cause the SmsNotificationHandler to be called
-         $bus->dispatch(new SmsNotification('Look! I created a message!'));
+         $bus->dispatch(new SmsNotification('New message!'));
 
          // or use the shortcut
          //$this->dispatchMessage(new SmsNotification('Look! I created a message!'));
